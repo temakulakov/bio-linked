@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kulakov Artem - Links</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/title.png" />
+    <link rel="stylesheet" href="./index.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"
+      defer
+    ></script>
+    <script defer>
+      window.addEventListener("DOMContentLoaded", () => {
+        VANTA.FOG({
+          el: "#vanta",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          highlightColor: 0x8600ff,
+          midtoneColor: 0xeeff00,
+          lowlightColor: 0x0,
+          baseColor: 0x0,
+        });
+        var link = document.getElementsByTagName("p")[0];
+        link.addEventListener("click", () => {
+          link.innerHTML = "@temakulakov ✓";
+          navigator.clipboard.writeText(
+            "https://temakulakov.github.io/bio-linked/#"
+          );
+        });
+        var qr = document.getElementById("popup1");
+        qr.addEventListener("click", () => {
+          window.location = "#";
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>
+    <div id="popup1" class="overlay">
+      <div id="modal"></div>
+    </div>
+    <main>
+      <header>
+        <a href="#popup1"
+          ><img id="ava" src="./images/tema.jpg" />
+          <img id="qr" src="./images/qrcode.svg" width="10px"
+        /></a>
+
+        <h1>Artem Kulakov</h1>
+        <p>@temakulakov<img src="./images/link.svg" alt="Link" width="15" /></p>
+      </header>
+      <ul>
+        <li>
+          <a href="#">
+            <img
+              src="./images/website.svg"
+              alt="WebSite"
+              width="20"
+            />WebSite</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/temakulakov"
+            ><img
+              src="./images/github.svg"
+              alt="Github"
+              width="20"
+              style="mask: url(./images/github.svg) no-repeat center / contain"
+            />Github</a
+          >
+        </li>
+
+        <li>
+          <a href="https://twitter.com/temakulakov"
+            ><img
+              src="./images/twitter.svg"
+              alt="Twitter"
+              width="20"
+            />Twitter</a
+          >
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/artem-kulakov-009068253/"
+            ><img
+              src="./images/linkedin.svg"
+              alt="LinkedIn"
+              width="20"
+            />LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://t.me/tema_kulakov"
+            ><img
+              src="./images/telegram.svg"
+              alt="Telegram"
+              width="20"
+            />Telegram</a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com/temakulakov_"
+            ><img
+              src="./images/instagram.svg"
+              alt="Instagram"
+              width="20"
+            />Instagram</a
+          >
+        </li>
+        <li>
+          <a href="https://vk.com/tema.kulakov"
+            ><img
+              src="./images/vk.svg"
+              alt="Vkontakte"
+              width="20"
+            />VKontakte</a
+          >
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
